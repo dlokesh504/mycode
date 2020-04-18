@@ -181,6 +181,9 @@ class SingleLinkedList:
     def bubble_sort_exlink(self):
         pass
 
+    def has_cycle(self):
+        pass
+
 
 list = SingleLinkedList()
 list.createlist()
