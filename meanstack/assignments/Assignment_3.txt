@@ -1,0 +1,313 @@
+This assignment is for, to practice the CSS properties and html tags.
+Browse the information related to the CSS properties and try to implement them.
+
+Go through the CSS basic reference file once.
+
+Assignment 3:
+1. Create a new html document and link a new css file to it(example:"page3_style.css" in below html code)
+2. You can use the below html code(modify as required) or create your own html content.
+3. Try the following CSS properties:
+	1. Properties related to display. example: display styles like inline, block, inline-block
+	2. Properties related to table. Styling table, th, td, tr, table-layout, caption etc;
+	3. Properies related to visibility.
+
+For further reference, you can mention/keepnote of the CSS properties used in the html page itself.(example: In the
+below html file, i created a <div> element at the bottom of the file to note them) 
+
+If you finish the assignment, attach the html and css files and send them through an email to sunilkanch2414@gmail.com
+If you have any queries, mention the same in the email. Make sure the subject of email starts with VNRMS
+
+
+
+<------- Html Code ------->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3 - Html & CSS</title>
+	<link rel="stylesheet" type="text/css" href="page3_style.css">
+</head>
+<body>
+	<article>
+		<!-- Inserting Images into Web Pages -->
+		<div class="section">
+			<div class="heading">
+				<h2>Images in Web Pages</h2>
+			</div>
+			<div class="description">
+				Images enhance visual appearance of the web pages by making them more interesting and colorful.
+				The &lt;img&gt; tag is used to insert images in the HTML documents. It is an empty element and contains attributes only.
+			</div>
+			<div>
+				Each image must carry at least two attributes: the src attribute, and an alt attribute.
+				The src attribute tells the browser where to find the image. Its value is the URL of the image file.
+				Whereas, the alt attribute provides an alternative text for the image, if it is unavailable or cannot be displayed for some reason. Its value should be a meaningful substitute for the image.
+			</div>
+			<div class="declaration">
+				Declaration:
+				&lt;img src="kites.jpg" alt="Flying Kites"&gt;
+				&lt;img src="images/sky.jpg" alt="Cloudy Sky"&gt;
+			</div>
+		</div>
+
+		<!-- Creating Tables in HTML -->
+		<div class="section">
+			<div class="heading">
+				<h2>Creating Tables in HTML</h2>
+			</div>
+			<div class="description">
+				HTML table allows you to arrange data into rows and columns. They are commonly used to display tabular data like product listings, customer's details, financial reports, and so on.
+				You can create a table using the &lt;table&gt; element. Inside the &lt;table&gt; element, you can use the &lt;tr&gt; elements to create rows, and to create columns inside a row you can use the &lt;td&gt; elements. You can also define a cell as a header for a group of table cells using the &lt;th&gt; element.
+			</div>
+			<div>
+				Tables do not have any borders by default. You can use the CSS border property to add borders to the tables. Also, table cells are sized just large enough to fit the contents by default. To add more space around the content in the table cells you can use the CSS padding property.
+			</div>
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;table&gt;
+					    &lt;tr&gt;
+					        &lt;th&gt;No.&lt;/th&gt;
+					        &lt;th&gt;Name&lt;/th&gt;
+					        &lt;th&gt;Age&lt;/th&gt;
+					    &lt;/tr&gt;
+					    &lt;tr&gt;
+					        &lt;td&gt;1&lt;/td&gt;
+					        &lt;td&gt;Peter Parker&lt;/td&gt;
+					        &lt;td&gt;16&lt;/td&gt;
+					    &lt;/tr&gt;
+					    &lt;tr&gt;
+					        &lt;td&gt;2&lt;/td&gt;
+					        &lt;td&gt;Clark Kent&lt;/td&gt;
+					        &lt;td&gt;34&lt;/td&gt;
+					    &lt;/tr&gt;
+					&lt;/table&gt;	
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<table>
+					    <tr>
+					        <th>No.</th>
+					        <th>Name</th>
+					        <th>Age</th>
+					    </tr>
+					    <tr>
+					        <td>1</td>
+					        <td>Peter Parker</td>
+					        <td>16</td>
+					    </tr>
+					    <tr>
+					        <td>2</td>
+					        <td>Clark Kent</td>
+					        <td>34</td>
+					    </tr>
+					</table>
+			</div>			
+		</div>
+
+		<!-- Multiple Rows and Columns -->
+		<div class="section">
+			<div class="heading">
+				<h2>Multiple Rows and Columns</h2>
+			</div>
+			<div class="description">
+				Spanning allow you to extend table rows and columns across multiple other rows and columns.
+				Normally, a table cell cannot pass over into the space below or above another table cell. But, you can use the rowspan or colspan attributes to span multiple rows or columns in a table.
+			</div>
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;table&gt;
+					    &lt;tr&gt;
+					        &lt;th&gt;Name&lt;/th&gt;
+					        &lt;th colspan="2"&gt;Phone&lt;/th&gt;
+					    &lt;/tr&gt;
+					    &lt;tr&gt;
+					        &lt;td&gt;John Carter&lt;/td&gt;
+					        &lt;td&gt;5550192&lt;/td&gt;
+					        &lt;td&gt;5550152&lt;/td&gt;
+					    &lt;/tr&gt;
+					&lt;/table&gt;			
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+				<table>
+				    <tr>
+				        <th>Name</th>
+				        <th colspan="2">Phone</th>
+				    </tr>
+				    <tr>
+				        <td>John Carter</td>
+				        <td>5550192</td>
+				        <td>5550152</td>
+				    </tr>
+				</table>
+			</div>
+			<div>
+				Similarly, you can use the rowspan attribute to create a cell that spans more than one row.
+			</div>
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;table&gt;
+					    &lt;tr&gt;
+					        &lt;th&gt;Name:&lt;/th&gt;
+					        &lt;td&gt;John Carter&lt;/td&gt;
+					    &lt;/tr&gt;
+					    &lt;tr&gt;
+					        &lt;th rowspan="2"&gt;Phone:&lt;/th&gt;
+					        &lt;td&gt;55577854&lt;/td&gt;
+					    &lt;/tr&gt;
+					    &lt;tr&gt;
+					        &lt;td&gt;55577855&lt;/td&gt;
+					    &lt;/tr&gt;
+					&lt;/table&gt;			
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+				<table>
+				    <tr>
+				        <th>Name:</th>
+				        <td>John Carter</td>
+				    </tr>
+				    <tr>
+				        <th rowspan="2">Phone:</th>
+				        <td>55577854</td>
+				    </tr>
+				    <tr>
+				        <td>55577855</td>
+				    </tr>
+				</table>
+			</div>
+		</div>
+		
+		<!-- Captions to Tables -->
+		<div class="section">
+			<div class="heading">
+				<h2>Captions to Tables</h2>
+			</div>
+			<div class="description">
+				You can specify a caption (or title) for your tables using the &lt;caption&gt; element.
+				The &lt;caption&gt; element must be placed directly after the opening &lt;table&gt; tag. By default, caption appears at the top of the table, but you can change its position using the CSS caption-side property.
+			</div>
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;table&gt;
+					    &lt;caption&gt;Users Info&lt;/caption&gt;
+					    &lt;tr&gt;
+					        &lt;th&gt;No.&lt;/th&gt;
+					        &lt;th&gt;Name&lt;/th&gt;
+					        &lt;th&gt;Age&lt;/th&gt;
+					    &lt;/tr&gt;
+					    &lt;tr&gt;
+					        &lt;td&gt;1&lt;/td&gt;
+					        &lt;td&gt;Peter Parker&lt;/td&gt;
+					        &lt;td&gt;16&lt;/td&gt;
+					    &lt;/tr&gt;
+					    &lt;tr&gt;
+					        &lt;td&gt;2&lt;/td&gt;
+					        &lt;td&gt;Clark Kent&lt;/td&gt;
+					        &lt;td&gt;34&lt;/td&gt;
+					    &lt;/tr&gt;
+					&lt;/table&gt;				
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<table>
+					    <caption>Users Info</caption>
+					    <tr>
+					        <th>No.</th>
+					        <th>Name</th>
+					        <th>Age</th>
+					    </tr>
+					    <tr>
+					        <td>1</td>
+					        <td>Peter Parker</td>
+					        <td>16</td>
+					    </tr>
+					    <tr>
+					        <td>2</td>
+					        <td>Clark Kent</td>
+					        <td>34</td>
+					    </tr>
+					</table>
+			</div>
+		</div>
+		
+		<!-- Table Header, Body, and Footer -->
+		<div class="section">
+			<div class="heading">
+				<h2>Table Header, Body, and Footer</h2>
+			</div>
+			<div class="description">
+				HTML provides a series of tags <thead>, <tbody>, and <tfoot> that helps you to create more structured table, by defining header, body and footer regions, respectively.
+			</div>
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;table&gt;
+					    &lt;thead&gt;
+					        &lt;tr&gt;
+					            &lt;th&gt;Items&lt;/th&gt;
+					            &lt;th&gt;Expenditure&lt;/th&gt;
+					        &lt;/tr&gt;
+					    &lt;/thead&gt;
+					    &lt;tbody&gt;
+					        &lt;tr&gt;
+					            &lt;td&gt;Stationary&lt;/td&gt;
+					            &lt;td&gt;2,000&lt;/td&gt;
+					        &lt;/tr&gt;
+					        &lt;tr&gt;
+					            &lt;td&gt;Furniture&lt;/td&gt;
+					            &lt;td&gt;10,000&lt;/td&gt;
+					        &lt;/tr&gt;        
+					    &lt;/tbody&gt;
+					    &lt;tfoot&gt;
+					        &lt;tr&gt;
+					            &lt;th&gt;Total&lt;/th&gt;
+					            &lt;td&gt;12,000&lt;/td&gt;
+					        &lt;/tr&gt;
+					    &lt;/tfoot&gt;
+					&lt;/table&gt;
+				</pre>						
+			</div>
+			<div class="result-view">
+				Result:
+				<table>
+				    <thead>
+				        <tr>
+				            <th>Items</th>
+				            <th>Expenditure</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+				        <tr>
+				            <td>Stationary</td>
+				            <td>2,000</td>
+				        </tr>
+				        <tr>
+				            <td>Furniture</td>
+				            <td>10,000</td>
+				        </tr>        
+				    </tbody>
+				    <tfoot>
+				        <tr>
+				            <th>Total</th>
+				            <td>12,000</td>
+				        </tr>
+				    </tfoot>
+				</table>		
+			</div>
+		</div>
+		<!-- CSS reference -->
+		<div class="about-css">
+			CSS properties used:
+		</div>		
+	</article>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="l.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>input</h3>
+        <form>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+            </form>
+            <form>
+                    <label for="user-pwd">Password:</label>
+                    <input type="password" name="user-password" id="user-pwd" placeholder="enter password">
+                </form>
+                <h3 >radio button</h3>
+                <form>
+					    <input type="radio" name="gender" id="male">
+					    <label for="male">Male</label>
+					    <input type="radio" name="gender" id="female">
+					    <label for="female">Female</label>
+                    </form>        
+                    <h3>checkbox</h3>
+                    <form>
+                            <input type="checkbox" name="sports" id="soccer">
+                            <label for="soccer">Soccer</label>
+                            <input type="checkbox" name="sports" id="cricket">
+                            <label for="cricket">Cricket</label>
+                            <input type="checkbox" name="sports" id="baseball">
+                            <label for="baseball">Baseball</label>
+                        </form>
+
+
+                        <h3>choose file</h3>
+                        <form>
+                                <label for="file-select">Upload:</label>
+                                <input type="file" name="upload" id="file-select">
+                            </form> 
+
+
+                            <form>
+                                    <label for="address">Address:</label>
+                                    <textarea rows="3" cols="30" name="address" id="address"></textarea>
+                                </form>
+
+
+                                <h3>drop down list</h3>
+                                <form>
+                                        <label for="city">City:</label>
+                                        <select name="city" id="city">
+                                            <option value="sydney">Sydney</option>
+                                            <option value="melbourne">Melbourne</option>
+                                            <option value="cromwell">Cromwell</option>
+                                        </select>
+                                    </form>
+
+
+
+
+                                    <h3>with reset button</h3>
+                                    <form action="action.php" method="post">
+                                            <label for="first-name">First Name:</label>
+                                            <input type="text" name="first-name" id="first-name">
+                                            <input type="submit" value="Submit">
+                                            <input type="reset" value="Reset">
+                                        </form>
+                    <h3>select color</h3>
+                    <form>
+                            <label for="mycolor">Select Color:</label>
+                            <input type="color" value="#00ff00" id="mycolor">
+                        </form> 
+
+
+                    <h3>select date</h3>    
+                    <form>
+                            <label for="mydate">Select Date:</label>
+                            <input type="date" value="2019-04-15" id="mydate">
+                        </form>
+
+                        <form>
+                                <label for="mydatetime">Choose Date and Time:</label>
+                                <input type="datetime-local" id="mydatetime">
+                            </form>
+
+                            <form>
+                                    <label for="mymonth">Select Month:</label>
+                                    <input type="month" id="mymonth">
+                                </form>
+
+                                <form>
+                                        <label for="mynumber">Enter a Number:</label>
+                                        <input type="number" min="1" max="10" step="0.5" id="mynumber">
+                                    </form> 
+           <h3>range</h3>                                 
+           <form>
+					    <label for="mynumber">Select a Number:</label>
+					    <input type="range" min="1" max="10" step="0.5" id="mynumber">    
+					</form>
+            
+             <h3>searc bar</h3>       
+             <form>
+                    <label for="mysearch">Search Website:</label>
+                    <input type="search" id="mysearch">
+                </form>
+
+
+
+
+            <h3>tel ph</h3>    
+            <form>
+                    <label for="myphone">Telephone Number:</label>
+                    <input type="tel" id="myphone" placeholder="xx-xxxx-xxxx" required>
+                </form> 
+
+
+           <h3>time</h3>     
+           <form>
+                <label for="mytime">Select Time:</label>
+                <input type="time" id="mytime">
+            </form>
+
+
+
+            <h3>url</h3>
+            <form>
+                    <label for="myurl">Enter Website URL:</label>
+                    <input type="url" id="myurl" required>
+                </form>
+
+                <form>
+					    <label for="myweek">Select Week:</label>
+					    <input type="week" id="myweek">
+					</form>	    
+</body>
+</html>

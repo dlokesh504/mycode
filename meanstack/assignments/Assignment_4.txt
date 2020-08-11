@@ -1,0 +1,172 @@
+This assignment is for, to practice the CSS properties and html tags.
+Browse the information related to the CSS properties and try to implement them.
+
+Go through the CSS basic reference file once.
+
+Assignment 4:
+1. Create a new html document and link a new css file to it(example:"page4_style.css" in below html code)
+2. You can use the below html code(modify as required) or create your own html content.
+3. Try the following CSS properties:
+	1. Properties related to position. Example: relative, fixed, absolute etc;
+	2. Properties related to float. Example: left, right etc;
+	3. Properies like z-index, top, bottom etc;
+
+For further reference, you can mention/keepnote of the CSS properties used in the html page itself.(example: In the
+below html file, i created a <div> element at the bottom of the file to note them) 
+
+If you finish the assignment, attach the html and css files and send them through an email to sunilkanch2414@gmail.com
+If you have any queries, mention the same in the email. Make sure the subject of email starts with VNRMS
+
+
+
+<------- Html Code ------->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 4 - Html & CSS</title>
+	<link rel="stylesheet" type="text/css" href="page4_style.css">
+</head>
+<body>
+	<article>
+		<!-- HTML Unordered Lists -->
+		<div class="section">
+			<div class="heading">
+				<h2>HTML Unordered Lists</h2>
+			</div>
+			<div class="description">
+				An unordered list created using the &lt;ul&gt; element, and each list item starts with the &lt;li&gt; element.
+				The list items in unordered lists are marked with bullets.
+			</div>
+			<div class="declaration">
+				Declaration:
+					&lt;ul&gt;
+					    &lt;li&gt;Chocolate Cake&lt;/li&gt;
+					    &lt;li&gt;Black Forest Cake&lt;/li&gt;
+					    &lt;li&gt;Pineapple Cake&lt;/li&gt;
+					&lt;/ul&gt;
+			</div>
+			<div class="result-view">
+				Result:
+					<ul>
+					    <li>Chocolate Cake</li>
+					    <li>Black Forest Cake</li>
+					    <li>Pineapple Cake</li>
+					</ul>							
+			</div>
+		</div>
+		<!-- HTML Ordered Lists -->
+		<div class="section">
+			<div class="heading">
+				<h2>HTML Ordered Lists</h2>
+			</div>
+			<div class="description">
+				An ordered list created using the &lt;ol&gt; element, and each list item starts with the &lt;li&gt; element. Ordered lists are used when the order of the list's items is important.
+				The list items in an ordered list are marked with numbers. 
+			</div>
+			<div class="declaration">
+				Declaration:
+					&lt;ol&gt;
+					    &lt;li&gt;Fasten your seatbelt&lt;/li&gt;
+					    &lt;li&gt;Starts the car's engine&lt;/li&gt;
+					    &lt;li&gt;Look around and go&lt;/li&gt;
+					&lt;/ol&gt;
+			</div>
+			<div class="result-view">
+				Result:
+					<ol>
+					    <li>Fasten your seatbelt</li>
+					    <li>Starts the car's engine</li>
+					    <li>Look around and go</li>
+					</ol>							
+			</div>
+		</div>
+		<!-- HTML Description Lists -->
+		<div class="section">
+			<div class="heading">
+				<h2>HTML Description Lists</h2>
+			</div>
+			<div class="description">
+				A description list is a list of items with a description or definition of each item.
+				The description list is created using &lt;dl&gt; element. The &lt;dl&gt; element is used in conjunction with the &lt;dt&gt; element which specify a term, and the &lt;dd&gt; element which specify the term's definition.
+				Browsers usually render the definition lists by placing the terms and definitions in separate lines, where the term's definitions are slightly indented.
+			</div>
+			<div class="declaration">
+				Declaration:
+					&lt;dl&gt;
+					    &lt;dt&gt;Bread&lt;/dt&gt;
+					    &lt;dd&gt;A baked food made of flour.&lt;/dd&gt;
+					    &lt;dt&gt;Coffee&lt;/dt&gt;
+					    &lt;dd&gt;A drink made from roasted coffee beans.&lt;/dd&gt;
+					&lt;/dl&gt;
+			</div>
+			<div class="result-view">
+				Result:
+					<dl>
+					    <dt>Bread</dt>
+					    <dd>A baked food made of flour.</dd>
+					    <dt>Coffee</dt>
+					    <dd>A drink made from roasted coffee beans.</dd>
+					</dl>							
+			</div>
+		</div>
+		<!-- Iframe -->
+		<div class="section">
+			<div class="heading">
+				<h2>HTML iframe</h2>
+			</div>
+			<div class="description">
+				An iframe or inline frame is used to display external objects including other web pages within a web page. An iframe pretty much acts like a mini web browser within a web browser. Also, the content inside an iframe exists entirely independent from the surrounding elements.
+				The URL specified in the src attribute points to the location of an external object or a web page.
+			</div>
+			<div class="declaration">
+				Declaration:
+				&lt;iframe src="hello.html"&gt;&lt;/iframe&gt;
+			</div>
+		</div>
+		<div class="section">
+			<div class="heading">
+				<h2>Setting Width and Height of an iFrame</h2>
+			</div>
+			<div class="description">
+				The height and width attributes are used to specify the height and width of the iframe.
+			</div>
+			<div class="declaration">
+				Declaration:
+				&lt;iframe src="hello.html" width="400" height="200"&gt;&lt;/iframe&gt;
+				<br>
+				&lt;iframe src="hello.html" style="width: 400px; height: 200px;"&gt;&lt;/iframe&gt;
+			</div>
+		</div>
+		<div class="section">
+			<div class="heading">
+				<h2>Removing Default Frameborder</h2>
+			</div>
+			<div class="description">
+				The iframe has a border around it by default. However, if you want to modify or remove the iframe borders, the best way is to use the CSS border property.
+			</div>
+			<div class="declaration">
+				Declaration:
+					&lt;iframe src="hello.html" style="border: none;"&gt;&lt;/iframe&gt;
+			</div>
+		</div>
+		<div class="section">
+			<div class="heading">
+				<h2>Using an iFrame as Link Target</h2>
+			</div>
+			<div class="description">
+				An iframe can also be used as a target for the hyperlinks.
+				An iframe can be named using the name attribute. This implies that when a link with a target attribute with that name as value is clicked, the linked resource will open in that iframe.
+			</div>
+			<div class="declaration">
+				Declaration:
+					&lt;iframe src="demo-page.html" name="myFrame"&gt;&lt;/iframe&gt;
+					&lt;p&gt;&lt;a href="https://www.google.com" target="myFrame"&gt;Open google home page&lt;/a&gt;&lt;/p&gt;
+			</div>
+		</div>
+		<!-- CSS reference -->
+		<div class="about-css">
+			CSS properties used:
+		</div>		
+	</article>
+</body>
+</html>

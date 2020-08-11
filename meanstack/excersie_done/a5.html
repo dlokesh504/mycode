@@ -1,0 +1,396 @@
+<------- Html Code ------->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 5 - Html & CSS</title>
+	<link rel="stylesheet" type="text/css" href="page5_style.css">
+</head>
+<body>
+	<article>
+		<!-- HTML Form -->
+		<div class="section">
+			<div class="heading">
+				<h2>HTML Form</h2>
+			</div>
+			<div class="description">
+				HTML Forms are required to collect different kinds of user inputs, such as contact details like name, email address, phone numbers, or details like credit card information, etc.
+				Forms contain special elements called controls like inputbox, checkboxes, radio-buttons, submit buttons, etc. Users generally complete a form by modifying its controls e.g. entering text, selecting items, etc. and submitting this form to a web server for further processing.
+				The &lt;form&gt; tag is used to create an HTML form.
+			</div>
+			<div>Examples:</div>
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="username"&gt;Username:&lt;/label&gt;
+					    &lt;input type="text" name="username" id="username"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="username">Username:</label>
+					    <input type="text" name="username" id="username">
+					</form>			
+			</div>
+
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="user-pwd"&gt;Password:&lt;/label&gt;
+					    &lt;input type="password" name="user-password" id="user-pwd"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="user-pwd">Password:</label>
+					    <input type="password" name="user-password" id="user-pwd">
+					</form>		
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;input type="radio" name="gender" id="male"&gt;
+					    &lt;label for="male"&gt;Male&lt;/label&gt;
+					    &lt;input type="radio" name="gender" id="female"&gt;
+					    &lt;label for="female"&gt;Female&lt;/label&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <input type="radio" name="gender" id="male">
+					    <label for="male">Male</label>
+					    <input type="radio" name="gender" id="female">
+					    <label for="female">Female</label>
+					</form>	
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;input type="checkbox" name="sports" id="soccer"&gt;
+					    &lt;label for="soccer"&gt;Soccer&lt;/label&gt;
+					    &lt;input type="checkbox" name="sports" id="cricket"&gt;
+					    &lt;label for="cricket"&gt;Cricket&lt;/label&gt;
+					    &lt;input type="checkbox" name="sports" id="baseball"&gt;
+					    &lt;label for="baseball"&gt;Baseball&lt;/label&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <input type="checkbox" name="sports" id="soccer">
+					    <label for="soccer">Soccer</label>
+					    <input type="checkbox" name="sports" id="cricket">
+					    <label for="cricket">Cricket</label>
+					    <input type="checkbox" name="sports" id="baseball">
+					    <label for="baseball">Baseball</label>
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="file-select"&gt;Upload:&lt;/label&gt;
+					    &lt;input type="file" name="upload" id="file-select"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="file-select">Upload:</label>
+					    <input type="file" name="upload" id="file-select">
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="address"&gt;Address:&lt;/label&gt;
+					    &lt;textarea rows="3" cols="30" name="address" id="address"&gt;&lt;/textarea&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="address">Address:</label>
+					    <textarea rows="3" cols="30" name="address" id="address"></textarea>
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="city"&gt;City:&lt;/label&gt;
+					    &lt;select name="city" id="city"&gt;
+					        &lt;option value="sydney"&gt;Sydney&lt;/option&gt;
+					        &lt;option value="melbourne"&gt;Melbourne&lt;/option&gt;
+					        &lt;option value="cromwell"&gt;Cromwell&lt;/option&gt;
+					    &lt;/select&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="city">City:</label>
+					    <select name="city" id="city">
+					        <option value="sydney">Sydney</option>
+					        <option value="melbourne">Melbourne</option>
+					        <option value="cromwell">Cromwell</option>
+					    </select>
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form action="action.php" method="post"&gt;
+					    &lt;label for="first-name"&gt;First Name:&lt;/label&gt;
+					    &lt;input type="text" name="first-name" id="first-name"&gt;
+					    &lt;input type="submit" value="Submit"&gt;
+					    &lt;input type="reset" value="Reset"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form action="action.php" method="post">
+					    <label for="first-name">First Name:</label>
+					    <input type="text" name="first-name" id="first-name">
+					    <input type="submit" value="Submit">
+					    <input type="reset" value="Reset">
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="mycolor"&gt;Select Color:&lt;/label&gt;
+					    &lt;input type="color" value="#00ff00" id="mycolor"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="mycolor">Select Color:</label>
+					    <input type="color" value="#00ff00" id="mycolor">
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="mydate"&gt;Select Date:&lt;/label&gt;
+					    &lt;input type="date" value="2019-04-15" id="mydate"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="mydate">Select Date:</label>
+					    <input type="date" value="2019-04-15" id="mydate">
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="mydatetime"&gt;Choose Date and Time:&lt;/label&gt;
+					    &lt;input type="datetime-local" id="mydatetime"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+				<form>
+				    <label for="mydatetime">Choose Date and Time:</label>
+				    <input type="datetime-local" id="mydatetime">
+				</form>	
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="myemail"&gt;Enter Email Address:&lt;/label&gt;
+					    &lt;input type="email" id="myemail" required&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="myemail">Enter Email Address:</label>
+					    <input type="email" id="myemail" required>
+					</form>
+			</div>
+
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="mymonth"&gt;Select Month:&lt;/label&gt;
+					    &lt;input type="month" id="mymonth"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="mymonth">Select Month:</label>
+					    <input type="month" id="mymonth">
+					</form>
+			</div>
+
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="mynumber"&gt;Enter a Number:&lt;/label&gt;
+					    &lt;input type="number" min="1" max="10" step="0.5" id="mynumber"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="mynumber">Enter a Number:</label>
+					    <input type="number" min="1" max="10" step="0.5" id="mynumber">
+					</form>
+			</div>
+
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="mynumber"&gt;Select a Number:&lt;/label&gt;
+					    &lt;input type="range" min="1" max="10" step="0.5" id="mynumber"&gt;    
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="mynumber">Select a Number:</label>
+					    <input type="range" min="1" max="10" step="0.5" id="mynumber">    
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="mysearch"&gt;Search Website:&lt;/label&gt;
+					    &lt;input type="search" id="mysearch"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="mysearch">Search Website:</label>
+					    <input type="search" id="mysearch">
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="myphone"&gt;Telephone Number:&lt;/label&gt;
+					    &lt;input type="tel" id="myphone" placeholder="xx-xxxx-xxxx" required&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="myphone">Telephone Number:</label>
+					    <input type="tel" id="myphone" placeholder="xx-xxxx-xxxx" required>
+					</form>
+			</div>
+
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="mytime"&gt;Select Time:&lt;/label&gt;
+					    &lt;input type="time" id="mytime"&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="mytime">Select Time:</label>
+					    <input type="time" id="mytime">
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="myurl"&gt;Enter Website URL:&lt;/label&gt;
+					    &lt;input type="url" id="myurl" required&gt;
+					&lt;/form&gt;
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="myurl">Enter Website URL:</label>
+					    <input type="url" id="myurl" required>
+					</form>
+			</div>
+
+			<div class="declaration">
+				Declaration:
+				<pre>
+					&lt;form&gt;
+					    &lt;label for="myweek"&gt;Select Week:&lt;/label&gt;
+					    &lt;input type="week" id="myweek"&gt;
+					&lt;/form&gt;		
+				</pre>
+			</div>
+			<div class="result-view">
+				Result:
+					<form>
+					    <label for="myweek">Select Week:</label>
+					    <input type="week" id="myweek">
+					</form>
+			</div>																	
+
+		<!-- CSS reference -->
+		<div class="about-css">
+			CSS properties used:
+		</div>		
+	</article>
+</body>
+</html>
