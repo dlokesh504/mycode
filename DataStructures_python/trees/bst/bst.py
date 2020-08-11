@@ -12,14 +12,44 @@ class BinartSearchTree:
         self.root = None
     def is_empty(self):
         return self.root == None
+
     def insert(self,x):
         self.root = self._insert(self.root,x)
+
     def _insert(self,p,x):
         if p is None:
             p=Node(x)
+        elif x<p.info:
+            p.lchild = self._insert(p.lchild,x)
+        elif x>p.info:
+            p.rchild = self._insert(p.rchild,x)
+        else:
+            print(x,"already present in the tree")
+        return p
 
     def insert1(self,x):
-        pass
+        p = self.root
+        par = None
+        while p is not None:
+            par = p
+            if x<p.info:
+                p=p.lchild
+            elif x>p.info:
+                p=p.rchild
+            else:
+                print(x," already present in the tree")
+                return
+        temp = Node(x)
+
+        if par== None:
+            self.root = temp
+        elif x<par.info:
+            par.lchild=temp
+        else:
+            par.rchild = temp
+
+
+
 
     def search(self,x):
         return self._search(self.root,x) is not None
@@ -47,32 +77,119 @@ class BinartSearchTree:
 
 
 
-
     def delete(self,x):
         self.root = self._delete(self.root,x)
-    def _delete(selfself,p,x):
-        pass
+
+    def _delete(self,p,x):
+        if p is None:
+            print(x," not found")
+            return p
+
+        if x < p.info:
+            p.lchild = self._delete(p.lchild,x)
+        elif x>p.info:
+            p.rchild = self._delete(p.rchild,x)
+        else:
+            #key to be deleted is found
+            if p.lchild is not None and p.rchild is not None: # 2 children
+                s=p.rchild
+                while s.lchild is not  None:
+                    s=s.lchild
+                p.info = s.info
+                p.rchild = self._delete(p.rchild,s.info)
+            else:#1 child or no child
+                if p.lchild is not None:
+                    ch = p.lchild
+                else:
+                    ch = p.rchild
+                p = ch
+        return p
+
+
+
 
     def delete1(self):
-        pass
+        p = self.root
+        par = None
+
+        while p is not None:
+            if x==p.info:
+                break
+            par = p
+            if x < p.info:
+                p = p.lchild
+            else:
+                p=p.rchild
+        if p == None:
+            print(x,"not found")
+            return
+
+        #case c : 2 cildren
+        #Find inorder successor and its parent
+
+        if p.lchild is not None and p.rchild is not None:
+            ps = p
+            s  =p.rchild
+            while s.lchild is not None:
+                ps =s
+                s= s.lchild
+            p.info = s.info
+            p = s
+            par = p
+
+        # case B and case A : 1 or no child
+
+        if p.lchild is not None:
+            ch = p.lchild
+        else:
+            ch = p.rchild
+
+        if par == None:
+            self.root = ch
+        elif p == par.lchild:
+            par.lchild = ch
+        else:
+            par.rchild = ch
+
+
+
 
 
     def min1(self):
-        pass
+        if self.is_empty():
+            raise TreeEmptyError("Tree is empty")
+        p = self.root
+        while p.lchild is not None:
+            p=p.lchild
+        return p.info
+
 
     def max1(self):
-        pass
+        if self.is_empty():
+            raise TreeEmptyError("Tree is empty")
+        p = self.root
+        while p.rchild is not None:
+            p = p.rchild
+        return p.info
 
     def min2(self):
-        pass
+        if self.is_empty():
+            raise TreeEmptyError("Tree is empty")
+        return self._min(self.root)
 
     def _min(self,p):
-        pass
+        if p.lchild is None:
+            return p
+        return self._min(p.lchild)
     def max2(self):
-        pass
+        if self.is_empty():
+            raise TreeEmptyError("Tree is empty")
+        return self._max(self.root).info
 
-    def map(self):
-        pass
+    def _max(self,p):
+        if p.rchild is None:
+            return p
+        return self._max(p.rchild)
 
     def diplay(self):
         pass
